@@ -1,163 +1,42 @@
-<!DOCTYPE html>
-<html lang="sr">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Balkan Media – Više platformi</title>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+<div class="cards">
 
-<style>
-body {
-  font-family: 'Montserrat', sans-serif;
-  margin:0;
-  background: linear-gradient(135deg, #1f1c2c, #928dab);
-  color:#fff;
-  display:flex;
-  justify-content:center;
-  align-items:flex-start;
-  min-height:100vh;
-  padding:20px;
-}
-.container {
-  max-width:800px;
-  width:100%;
-}
-.header {
-  text-align:center;
-  margin-bottom:40px;
-}
-.header h1 {
-  font-size:34px;
-  font-weight:700;
-  margin-bottom:15px;
-  background: linear-gradient(90deg, #00c6ff, #0072ff);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.header p {
-  font-size:16px;
-  line-height:1.8;
-  opacity:0.85;
-  max-width:650px;
-  margin:0 auto;
-}
-.cards {
-  display:grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap:25px;
-}
-.card {
-  background: rgba(255,255,255,0.08);
-  padding:25px;
-  border-radius:18px;
-  text-align:center;
-  transition: transform 0.3s, background 0.3s;
-  cursor:pointer;
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-}
-.card:hover {
-  transform: translateY(-6px);
-  background: rgba(0,198,255,0.2);
-}
-.card img {
-  width:80px;
-  height:80px;
-  margin-bottom:15px;
-}
-.card h3 {
-  font-size:20px;
-  margin-bottom:12px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-.card a {
-  display:inline-block;
-  margin-top:10px;
-  padding:10px 16px;
-  border-radius:12px;
-  background:#00c6ff;
-  color:#000;
-  font-weight:600;
-  text-decoration:none;
-  transition: background 0.3s;
-}
-.card a:hover {
-  background:#0072ff;
-  color:#fff;
-}
-
-/* CENTRIRANA KARTICA */
-.card.center {
-  grid-column: 1 / -1;
-  max-width:300px;
-  margin:0 auto;
-}
-
-@media(max-width:600px){
-  .card h3 {
-    font-size:18px;
-  }
-}
-</style>
-</head>
-
-<body>
-<div class="container">
-
-  <div class="header">
-    <h1>Dobrodošli na Balkan Media</h1>
-    <p>
-      Ovde možete lako pronaći i pristupiti <b>Android</b>, <b>iOS</b> i
-      <b>Windows</b> aplikacijama. Kliknite na platformu ispod da otvorite
-      stranicu sa aplikacijama.
-    </p>
+  <div class="card">
+    <img src="images/android.png" alt="Android">
+    <h3>Android aplikacije</h3>
+    <a href="https://uploadvideosr-max.github.io/bio/">Otvori</a>
   </div>
 
-  <div class="cards">
-
-    <div class="card">
-      <img src="images/android.png" alt="Android">
-      <h3>Android aplikacije</h3>
-      <a href="https://uploadvideosr-max.github.io/bio/">Otvori</a>
-    </div>
-
-    <div class="card">
-      <img src="images/ios.png" alt="iOS">
-      <h3>iOS aplikacije</h3>
-      <a href="https://uploadvideosr-max.github.io/bio3/">Otvori</a>
-    </div>
-
-    <div class="card">
-      <img src="images/windows.png" alt="Windows">
-      <h3>Windows aplikacije</h3>
-      <a href="#">Otvori</a>
-    </div>
-
-    <!-- NOVA KARTICA: Video tutorial -->
-    <div class="card">
-      <img src="images/video.png" alt="Video tutorial">
-      <h3>Video tutorial</h3>
-      <a href="link_do_video_tutoriala">Pogledaj</a>
-    </div>
-
-    <!-- NOVA KARTICA: PDF tutorial -->
-    <div class="card">
-      <img src="images/pdf.png" alt="PDF tutorial">
-      <h3>PDF tutorial</h3>
-      <a href="link_do_pdf_tutoriala">Preuzmi</a>
-    </div>
-
-    <!-- OSTALe APLIKACIJE - CENTAR -->
-    <div class="card center">
-      <img src="images/Other.png" alt="Ostale aplikacije">
-      <h3>Ostale aplikacije</h3>
-      <a href="https://uploadvideosr-max.github.io/bio4/">Otvori</a>
-    </div>
-
+  <div class="card">
+    <img src="images/ios.png" alt="iOS">
+    <h3>iOS aplikacije</h3>
+    <a href="https://uploadvideosr-max.github.io/bio3/">Otvori</a>
   </div>
+
+  <div class="card">
+    <img src="images/windows.png" alt="Windows">
+    <h3>Windows aplikacije</h3>
+    <a href="#">Otvori</a>
+  </div>
+
+  <!-- OSTALe APLIKACIJE - CENTAR, sada pre Video tutorial -->
+  <div class="card center">
+    <img src="images/Other.png" alt="Ostale aplikacije">
+    <h3>Ostale aplikacije</h3>
+    <a href="https://uploadvideosr-max.github.io/bio4/">Otvori</a>
+  </div>
+
+  <!-- NOVA KARTICA: Video tutorial -->
+  <div class="card">
+    <img src="images/video.png" alt="Video tutorial">
+    <h3>Video tutorial</h3>
+    <a href="link_do_video_tutoriala">Pogledaj</a>
+  </div>
+
+  <!-- NOVA KARTICA: PDF tutorial -->
+  <div class="card">
+    <img src="images/pdf.png" alt="PDF tutorial">
+    <h3>PDF tutorial</h3>
+    <a href="link_do_pdf_tutoriala">Preuzmi</a>
+  </div>
+
 </div>
-</body>
-</html>
