@@ -3,161 +3,164 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Balkan Media – Više platformi</title>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+<title>Balkan Media – Aplikacije</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
 
 <style>
-body {
-  font-family: 'Montserrat', sans-serif;
+body{
   margin:0;
-  background: linear-gradient(135deg, #1f1c2c, #928dab);
+  font-family:'Montserrat',sans-serif;
+  background:linear-gradient(135deg,#1f1c2c,#928dab);
   color:#fff;
   display:flex;
   justify-content:center;
-  align-items:flex-start;
-  min-height:100vh;
   padding:20px;
 }
-.container {
-  max-width:800px;
+
+.container{
+  max-width:520px;
   width:100%;
 }
-.header {
-  text-align:center;
-  margin-bottom:40px;
-}
-.header h1 {
-  font-size:34px;
-  font-weight:700;
-  margin-bottom:15px;
-  background: linear-gradient(90deg, #00c6ff, #0072ff);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.header p {
-  font-size:16px;
-  line-height:1.8;
-  opacity:0.85;
-  max-width:650px;
-  margin:0 auto;
-}
-.cards {
-  display:grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap:25px;
-}
-.card {
-  background: rgba(255,255,255,0.08);
-  padding:25px;
+
+.intro{
+  background:linear-gradient(90deg,#ff4ecd,#ff7adf);
+  padding:22px;
   border-radius:18px;
   text-align:center;
-  transition: transform 0.3s, background 0.3s;
-  cursor:pointer;
-  display:flex;
-  flex-direction:column;
-  align-items:center;
+  margin-bottom:20px;
+  box-shadow:0 8px 20px rgba(0,0,0,.35);
 }
-.card:hover {
-  transform: translateY(-6px);
-  background: rgba(0,198,255,0.2);
+
+.intro h1{
+  margin:0 0 10px;
+  font-size:26px;
+  font-weight:700;
 }
-.card img {
+
+.intro p{
+  margin:0;
+  font-size:16px;
+  line-height:1.5;
+}
+
+.app{
+  background:rgba(255,255,255,.1);
+  border-radius:16px;
+  padding:18px;
+  margin-bottom:14px;
+  text-align:center;
+  box-shadow:0 6px 14px rgba(0,0,0,.25);
+}
+
+.app img{
   width:80px;
   height:80px;
-  margin-bottom:15px;
+  object-fit:contain;
+  margin-bottom:10px;
 }
-.card h3 {
-  font-size:20px;
-  margin-bottom:12px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-.card a {
-  display:inline-block;
-  margin-top:10px;
-  padding:10px 16px;
-  border-radius:12px;
-  background:#00c6ff;
-  color:#000;
+
+.app h3{
+  margin:6px 0 14px;
+  font-size:18px;
   font-weight:600;
-  text-decoration:none;
-  transition: background 0.3s;
 }
-.card a:hover {
-  background:#0072ff;
+
+.btn{
+  display:inline-block;
+  padding:13px 25px;
+  border-radius:14px;
+  background:linear-gradient(135deg,#ff4ecd,#ff7adf);
   color:#fff;
+  font-weight:700;
+  letter-spacing:.5px;
+  text-transform:uppercase;
+  text-decoration:none;
+  user-select:none;
 }
 
-/* CENTRIRANA KARTICA */
-.card.center {
-  grid-column: 1 / -1;
-  max-width:300px;
-  margin:0 auto;
+.footer{
+  text-align:center;
+  opacity:.7;
+  font-size:13px;
+  margin-top:22px;
 }
 
-@media(max-width:600px){
-  .card h3 {
-    font-size:18px;
-  }
+/* Logo */
+.logo {
+  position: fixed;
+  top: 20px;
+  right: 20px; /* Za levi ugao: left: 20px; */
+  width: 50px;
+  height: 50px;
+  z-index: 1000;
+  cursor: pointer;
+  /* animation: spin 5s linear infinite;  <-- uklonjeno za statički logo */
 }
+
+/* Ako želite da dodate rotaciju loga, uklonite komentare ispod */
+/*
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+*/
 </style>
 </head>
 
 <body>
+
+<!-- Vaš logo -->
+<a href="https://www.microsoft.com" target="_blank">
+  <img src="images/edfc160d-608b-42ec-b685-d1404131fbf4.png" alt="Balkan Media Logo" class="logo">
+</a>
+
 <div class="container">
 
-  <div class="header">
-    <h1>Dobrodošli na Balkan Media</h1>
-    <p>
-      Ovde možete lako pronaći i pristupiti <b>Android</b>, <b>iOS</b> i
-      <b>Windows</b> aplikacijama. Kliknite na platformu ispod da otvorite
-      stranicu sa aplikacijama.
-    </p>
-  </div>
+<div class="intro">
+  <h1>Balkan Media</h1>
+  <p>Ovde možete pronaći naše aplikacije.<br>
+  Kliknite na dugme ispod da započnete preuzimanje.</p>
+</div>
 
-  <div class="cards">
+<div class="app">
+  <img src="images/aladin.png" alt="Aladin">
+  <h3>Aladin</h3>
+  <a href="https://primer-link.com/aladin.apk" class="btn" target="_blank">Preuzmi</a>
+</div>
 
-    <div class="card">
-      <img src="images/android.png" alt="Android">
-      <h3>Android aplikacije</h3>
-      <a href="https://uploadvideosr-max.github.io/bio/">Otvori</a>
-    </div>
+<div class="app">
+  <img src="images/ibo_player_ios.png" alt="IBO Player">
+  <h3>IBO Player</h3>
+  <a href="https://primer-link.com/ibo_player_ios.ipa" class="btn" target="_blank">Preuzmi</a>
+</div>
 
-    <div class="card">
-      <img src="images/ios.png" alt="iOS">
-      <h3>iOS aplikacije</h3>
-      <a href="https://uploadvideosr-max.github.io/bio3/">Otvori</a>
-    </div>
+<div class="app">
+  <img src="images/ibo_player_pro_ios.png" alt="IBO Player Pro">
+  <h3>IBO Player Pro</h3>
+  <a href="https://primer-link.com/ibo_player_pro_ios.ipa" class="btn" target="_blank">Preuzmi</a>
+</div>
 
-    <div class="card">
-      <img src="images/windows.png" alt="Windows">
-      <h3>Windows aplikacije</h3>
-      <a href="#">Otvori</a>
-    </div>
+<div class="app">
+  <img src="images/bob_player_ios.png" alt="BOB Player">
+  <h3>BOB Player</h3>
+  <a href="https://primer-link.com/bob_player_ios.ipa" class="btn" target="_blank">Preuzmi</a>
+</div>
 
-    <!-- OSTALe APLIKACIJE - LEVO -->
-    <div class="card Left">
-      <img src="images/Other.png" alt="Ostale aplikacije">
-      <h3>Ostale aplikacije</h3>
-      <a href="https://uploadvideosr-max.github.io/bio4/">Otvori</a>
-    </div>
+<div class="app">
+  <img src="images/vu_player_pro_ios.png" alt="VU Player Pro">
+  <h3>VU Player Pro</h3>
+  <a href="https://primer-link.com/vu_player_pro_ios.ipa" class="btn" target="_blank">Preuzmi</a>
+</div>
 
-  <!-- Video tutorial sada u istom redu -->
-  <div class="card Centar">
-    <img src="images/video1.png" alt="Video tutorial">
-    <h3>Video uputstva</h3>
-    <a href="https://uploadvideosr-max.github.io/bio5/">Pogledaj</a>
-  </div>
+<div class="app">
+  <img src="images/smarters_iptv_ios.png" alt="Smarters IPTV Player">
+  <h3>Smarters IPTV Player</h3>
+  <a href="https://primer-link.com/smarters_iptv_ios.ipa" class="btn" target="_blank">Preuzmi</a>
+</div>
 
-      <!-- Video tutorial sada u istom redu -->
-  <div class="card Right">
-    <img src="images/info o vezi.png" alt="Video tutorial">
-    <h3>Informacije o vezi</h3>
-    <a href="https://uploadvideosr-max.github.io/bio6/">Pogledaj</a>
-  </div>
+<div class="footer">© Balkan Media</div>
 
-  </div>
 </div>
 </body>
 </html>
